@@ -1,0 +1,150 @@
+:root {
+  --ivory: #F4EFEA;
+  --champagne: #E8D5C4;
+  --rose-gold: #D8A7A7;
+  --mauve: #B47C7C;
+  --taupe: #8C7A73;
+  --leather: #4E3B36;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--ivory);
+  color: var(--taupe);
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: var(--ivory);
+}
+
+.navbar nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: var(--leather);
+  font-weight: 500;
+}
+
+.logo {
+  height: 100px;
+}
+
+/* Hero */
+.hero {
+  padding: 6rem 3rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: var(--leather);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+/* Button */
+.primary-btn {
+  background-color: var(--rose-gold);
+  border: none;
+  padding: 0.8rem 2rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: var(--mauve);
+}
+
+/* Sections */
+.section {
+  padding: 4rem 3rem;
+}
+
+.section h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--leather);
+  margin-bottom: 1rem;
+}
+
+.champagne {
+  background-color: var(--champagne);
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--leather);
+  color: var(--ivory);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+/* Hover effects */
+.navbar a:hover,
+.primary-btn:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+/* Buttons */
+.primary-btn {
+  background-color: #cfa87f; /* champagne tone */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Card hover */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+/* Contact form */
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  width: 100%;
+}
