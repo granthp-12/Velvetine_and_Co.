@@ -26,14 +26,19 @@
   </section>
 
   <!-- Contact Form -->
-  <section class="section">
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button class="primary-btn" type="submit">Send Message</button>
-    </form>
-  </section>
+  <form class="contact-form" onsubmit="return false;">
+  <p style="font-size: 0.85rem; margin-bottom: 1rem;">
+    This form does not collect or store personal data.
+  </p>
+
+  <input type="text" placeholder="Your Name" aria-label="Name" />
+  <input type="email" placeholder="Your Email" aria-label="Email" />
+  <textarea placeholder="Your Message" rows="5"></textarea>
+
+  <button class="primary-btn" type="button">
+    Send Message
+  </button>
+</form>
 
   <footer>
     <p>© 2025 Velvetine & Co.</p>
@@ -41,3 +46,4 @@
 # 2 ref num 2 ref email id
 </body>
 </html>
+
